@@ -4,4 +4,4 @@ tracker服务器:sudo /usr/local/bin/fdfs_trackerd /etc/fdfs/tracker.conf start
 storage服务器:sudo /usr/local/bin/fdfs_storaged /etc/fdfs/storage.conf start
 uwsgi服务器：uwsgi --ini uwsgi.ini   和    uwsgi --ini uwsgi2.ini
 进入项目根目录启动celery命令:celery -A celery_tasks.tasks worker -l info
-其他人使用时如果遇到麻烦请打电话18267885947咨询
+使用时如果遇到麻烦请打电话18267885947咨询
