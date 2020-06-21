@@ -1,0 +1,6 @@
+开启这个项目需要启动redis数据库：redis-server,
+nginx服务器:sudo /usr/local/etc/nginx/bin/nginx -c /usr/local/etc/nginx/nginx.conf
+tracker服务器:sudo /usr/local/bin/fdfs_trackerd /etc/fdfs/tracker.conf start
+storage服务器:sudo /usr/local/bin/fdfs_storaged /etc/fdfs/storage.conf start
+uwsgi服务器：uwsgi --ini uwsgi.ini   和    uwsgi --ini uwsgi2.ini
+进入项目根目录启动celery命令:celery -A celery_tasks.tasks worker -l info
